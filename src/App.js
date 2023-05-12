@@ -243,7 +243,7 @@ function App() {
   useEffect(() => {
     async function loadModel() {
       const model = await tf.loadLayersModel(
-        process.env.PUBLIC_URL + "/tfjs_model/model.json"
+        "https://sanahuel.github.io/visualize-cnn/tfjs_model/model.json"
       );
       setModel(model);
       setModelLoaded(true);
